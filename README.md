@@ -35,4 +35,4 @@ CookieInfoBar has two methods to use on the blade: `@cookieInfoBar()` and `@edit
 
 `@cookieInfoBar()` is responsible for displaying the modal or the bar at the bottom.
 
-`@editCookies()` is an anchor that accepts a text as a parameter to go, for example from the footer to the edit screen once accepted or rejected
+`@editCookies()` is an anchor that accepts a text as a parameter to go, for example from the footer to the edit screen once accepted or rejected.

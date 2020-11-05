@@ -32,6 +32,10 @@ class CookieInfoBarServiceProvider extends ServiceProvider
     {
         $this->bootConfig();
         $this->loadTranslationsFrom(__DIR__.'/lang', 'albertgpdev-cookie-info-bar');
+        $this->publishes([
+            __DIR__.'/lang' => resource_path('lang/vendor/albertgpdev-cookie-info-bar'),
+        ]);
+
         $this->loadViewsFrom(__DIR__.'/views', 'albertgpdev-cookie-info-bar');
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
     }

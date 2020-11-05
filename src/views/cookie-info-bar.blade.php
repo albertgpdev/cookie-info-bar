@@ -5,5 +5,5 @@
     </div>    
     @include('albertgpdev-cookie-info-bar::partials.buttons')
 </div>
-@include('albertgpdev-cookie-info-bar::partials.modal-customize-panel')
+@include('albertgpdev-cookie-info-bar::cookie-info-modal')
 @include('albertgpdev-cookie-info-bar::partials.scripts')

@@ -61,8 +61,12 @@ class CookieInfoBarServiceProvider extends ServiceProvider
      */
     public function addBladeDirective(BladeCompiler $blade)
     {
-        $blade->directive('cookieInfoBar', function ($lang) {
+        $blade->directive('cookieInfoBar', function () {
             return "<?php echo app('cookie-info-bar')->render(); ?>";
+        });
+
+        $blade->directive('editCookies', function ($text) {
+            return "<?php echo app('cookie-info-bar')->edit(".$text."); ?>";
         });
     }
 }

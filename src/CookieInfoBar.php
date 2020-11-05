@@ -31,4 +31,9 @@ class CookieInfoBar
 
         return $view;
     }
+
+    public function edit($text)
+    {
+        return view('albertgpdev-cookie-info-bar::edit', compact('text'))->render();
+    }
 }

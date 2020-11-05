@@ -1,19 +1,19 @@
 {
-    "name": "albertgpdev/cookie-info-bar",
-    "version": "0.0.1",
-    "type": "package",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Albert Gonzalez Pons",
-            "email": "albertgp.dev@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Albertgpdev\\CookieInfoBar\\": "src/"
-        }
-    },
-    "require": {}
+  "name": "albertgpdev/cookie-info-bar",
+  "version": "1.0.0",
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Albert Gonzalez Pons",
+      "email": "albertgp.dev@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Albertgpdev\\CookieInfoBar\\": "src/"
+    }
+  },
+  "require": {}
 }

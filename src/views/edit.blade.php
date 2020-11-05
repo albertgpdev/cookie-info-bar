@@ -1,0 +1,1 @@
+<a href="javascript:void(0);" class="cookie-info-bar__edit" onclick="editCookies()">{{ $text }}</a>

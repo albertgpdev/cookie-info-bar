@@ -8,11 +8,11 @@
                 @include('albertgpdev-cookie-info-bar::partials.used-cookies')
             </div>
         @endif
-        @if($type === \Albertgpdev\CookieInfoBar::TYPE_MODAL)
+        @if($type === \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_MODAL)
         @include('albertgpdev-cookie-info-bar::partials.buttons')
         @endif
   </div>
 </div>
-@if($type === \Albertgpdev\CookieInfoBar::TYPE_MODAL)
+@if($type === \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_MODAL)
     @include('albertgpdev-cookie-info-bar::partials.scripts')
 @endif

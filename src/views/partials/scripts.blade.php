@@ -6,7 +6,7 @@
             customizePanel.style.display = customizePanel.style.display == "inline" ? "none" : "inline"
         }
     @endif
-    @if($type === \Albertgpdev\CookieInfoBar::TYPE_BAR)    
+    @if($type === \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_BAR)    
         const elementToHide = document.querySelector('.cookie-info-bar__content')
     @else 
         const elementToHide = document.querySelector('.cookie-info-bar__modal-mask')
@@ -27,7 +27,7 @@
         const json = await fetch("{{ route('consent-cookies') }}?accepted=true")
             .then(response => {
                 elementToHide.style.display = "none";
-                @if($type == \Albertgpdev\CookieInfoBar::TYPE_BAR)
+                @if($type == \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_BAR)
                     document.querySelector('.cookie-info-bar__modal-mask').style.display = "none";
                 @endif                
             })
@@ -38,7 +38,7 @@
         const json = await fetch("{{ route('consent-cookies') }}?accepted=false")
             .then(response => {
                 elementToHide.style.display = "none"
-                @if($type == \Albertgpdev\CookieInfoBar::TYPE_BAR)
+                @if($type == \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_BAR)
                 document.querySelector('.cookie-info-bar__modal-mask').style.display = "none";
                 @endif                
             })
@@ -55,7 +55,7 @@
         const json = await fetch(`{{ route('consent-cookies') }}?${asString}`,)
             .then(response => {
                     elementToHide.style.display = "none";
-                    @if($type == \Albertgpdev\CookieInfoBar::TYPE_BAR)
+                    @if($type == \Albertgpdev\CookieInfoBar\CookieInfoBar::TYPE_BAR)
                     document.querySelector('.cookie-info-bar__modal-mask').style.display = "none";
                     @endif
                 })
